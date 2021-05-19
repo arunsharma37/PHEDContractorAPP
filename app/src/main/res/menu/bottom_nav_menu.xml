@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme.NoActionBar"
+    >
+    <item
+        android:id="@+id/action_reg_comp"
+        android:enabled="true"
+        android:icon="@drawable/ic_register_complaint"
+        android:title="Register Complaint"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_comp_list"
+        android:enabled="true"
+        android:icon="@drawable/ic_complaint_list"
+        android:title="My Complaints"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+</menu>

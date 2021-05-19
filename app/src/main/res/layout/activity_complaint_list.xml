@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+
+   >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_img"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/ic__back_arrow"/>
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Grievance Details"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_tender_details"
+        android:layout_margin="20dp"
+
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#DCDCDC"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Tender Number : "
+
+                    android:id="@+id/text_tender_no"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tender_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text_tender_no"
+                    android:text="98623"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+
+                    />
+
+
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Work Name : "
+
+                    android:id="@+id/text_work_name"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Road Work"
+                    android:id="@+id/work_nname"
+                    android:layout_toRightOf="@+id/text_work_name"
+                    android:textSize="15dp"
+
+                    />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Register Date : "
+
+                    android:id="@+id/text_agreement_no"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="22/04/2020"
+                    android:id="@+id/agrement_no"
+                    android:layout_toRightOf="@+id/text_agreement_no"                                android:textSize="15dp"
+
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Remarks : "
+
+                    android:id="@+id/text_status_remarks"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Your complaint has been resolved."
+                    android:id="@+id/status_remarks"
+                    android:layout_toRightOf="@+id/text_status_remarks"                                android:textSize="15dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Status : "
+
+                    android:id="@+id/text_emd_amt"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Closed"
+                    android:id="@+id/end_amount"
+                    android:layout_toRightOf="@+id/text_emd_amt"                                android:textSize="15dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Targer Date : "
+
+                    android:id="@+id/text_time_period"
+                    android:textSize="15dp"
+
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+
+                    android:text="28/04/2021"
+                    android:id="@+id/time_period"
+                    android:layout_toRightOf="@+id/text_time_period"                                android:textSize="15dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_satisfy_reopen"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_work"
+                    android:layout_marginTop="10dp"
+                    android:text="Satisfied"
+                    android:textSize="15dp"
+                    android:id="@+id/button_satisfy_feedback"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+
+                    android:background="@drawable/round_button_colored"
+                    android:layout_centerInParent="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_work"
+                    android:layout_marginTop="10dp"
+                    android:text="Reopen"
+                    android:textSize="15dp"
+                    android:id="@+id/button_reopen"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/round_button_colored"
+                    android:layout_centerInParent="true"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_reopen"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_rating"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="3dp"
+                    android:textStyle="bold"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:text="Give Us Rating:"
+                    android:layout_below="@+id/layout_subcategory_drop"
+                    android:textColor="#000"
+                    />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/star_rating"
+                    android:progressTint="@color/app_color"
+                    style="@style/Widget.MaterialRatingBar.RatingBar" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="8"
+                    android:layout_below="@+id/layout_subcategory_drop"
+                    android:orientation="vertical"
+                    android:id="@+id/layout_remarks"
+                >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_reopen_reason"
+
+
+                        android:paddingLeft="2dp"
+                        android:paddingRight="3dp"
+                        android:textStyle="bold"
+                        android:inputType="textImeMultiLine|textMultiLine"
+                        android:text="Reopen Reason:"
+                        android:layout_below="@+id/layout_subcategory_drop"
+                        android:textColor="#000"
+                        />
+
+                    <EditText
+                        android:id="@+id/edt_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/spinner_design"
+                        android:inputType="textMultiLine"
+                        android:overlapAnchor="false"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:layout_marginTop="10dp"
+                        android:maxLines="4"
+                        android:scrollbars="vertical"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_remarks"
+
+                        android:text="Attach File"
+                        android:textSize="15dp"
+                        android:id="@+id/btn_attach"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/sqaure_editbox"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layout_work"
+                        android:layout_marginTop="10dp"
+                        android:text="SUBMIT"
+                        android:textSize="15dp"
+                        android:id="@+id/button_submit_reason"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+
+                        android:background="@drawable/round_button_colored"
+                        android:layout_centerInParent="true"/>
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_work"
+                            android:layout_marginTop="10dp"
+                            android:text="CANCEL"
+                            android:textSize="15dp"
+                            android:id="@+id/button_reason_cancel"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#fff"
+                            android:textStyle="bold"
+
+                            android:background="@drawable/round_button_colored"
+                            android:layout_centerInParent="true"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

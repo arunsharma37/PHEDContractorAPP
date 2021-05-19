@@ -1,0 +1,540 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".splash">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_img"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic__back_arrow"/>
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Profile"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_below="@+id/toolbar"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_parent"
+        android:layout_below="@+id/view_line">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Details"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:textColor="#000"
+            android:gravity="center"
+             android:id="@+id/register_tex"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_agency"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:layout_below="@+id/register_tex"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_agency"
+        android:padding="20dp"
+        android:background="@drawable/sqaure_editbox"
+        android:layout_below="@+id/personal_layout"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_agency_details"
+        android:text="Agency Details"
+
+        android:textSize="15dp"
+
+        android:textColor="#000"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drop_down"
+
+            android:background="@drawable/ic_drop_down"
+            android:layout_alignParentRight="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/text_agency_details"
+            android:id="@+id/layout_agency_visible">
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_agency"
+            android:text="Agency/Constitution Type:"
+            android:textSize="15dp"
+
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_agency"
+            android:text="Public Limited"
+            android:textSize="15dp"
+            android:layout_below="@+id/text_agency"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_agency_name"
+            android:layout_below="@+id/edittext_agency"
+            android:text="Agency Name:"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_agency_name"
+            android:text="Lorem Ipsum"
+            android:textSize="15dp"
+            android:layout_below="@+id/text_agency_name"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_website_name"
+            android:layout_below="@+id/edittext_agency_name"
+            android:text="Website Name:"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_website_name"
+            android:text="www.loreumipsum.com"
+            android:textSize="15dp"
+            android:layout_below="@+id/text_website_name"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:layout_below="@+id/card_agency"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_address"
+            android:padding="20dp"
+            android:background="@drawable/sqaure_editbox"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_address_details"
+                android:text="Address Details"
+
+                android:textSize="15dp"
+
+                android:textColor="#000"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drop_down_address"
+                android:background="@drawable/ic_drop_down"
+                android:layout_alignParentRight="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/text_address_details"
+            android:id="@+id/layout_address_visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_registered_address"
+
+                android:text="Registered Address:"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext_registered_address"
+                android:text="#1234,Sector 65,Mohali"
+                android:textSize="15dp"
+                android:layout_below="@+id/text_registered_address"
+                android:textStyle="bold"
+                android:textColor="#000"
+
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_state"
+                android:layout_below="@+id/edittext_registered_address"
+                android:text="State:"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext_state"
+                android:text="Punjab"
+                android:textSize="15dp"
+                android:layout_below="@+id/text_state"
+                android:textStyle="bold"
+                android:textColor="#000"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_district"
+                android:layout_below="@+id/edittext_state"
+                android:text="District:"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext_district"
+                android:text="Mohali"
+                android:textSize="15dp"
+                android:layout_below="@+id/text_district"
+                android:textStyle="bold"
+                android:textColor="#000"
+
+
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_office_details"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/card_address"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_office_details"
+            android:padding="20dp"
+            android:background="@drawable/sqaure_editbox"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_office_details"
+                android:text="Office Details"
+
+                android:textSize="15dp"
+
+                android:textColor="#000"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/drop_down_office"
+                android:background="@drawable/ic_drop_down"
+                android:layout_alignParentRight="true"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/text_office_details"
+                android:id="@+id/layout_office_visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_office_landline"
+
+                    android:text="Office Landline No. (with STD code)"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_office_landline"
+                    android:text="#1234,Sector 65,Mohali"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_office_landline"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_msme"
+                    android:layout_below="@+id/edittext_office_landline"
+                    android:text="State:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_msme"
+                    android:text="Yes"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_msme"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_hum_id"
+                    android:layout_below="@+id/edittext_msme"
+                    android:text="HUM ID:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_humid"
+                    android:text="Lorem Ipsum"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_hum_id"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_pan_no"
+                    android:layout_below="@+id/edittext_humid"
+                    android:text="PAN No:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_pan_no"
+                    android:text="Lorem Ipsum"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_pan_no"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_tin_no"
+                    android:layout_below="@+id/edittext_pan_no"
+                    android:text="TIN No:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_tin_no"
+                    android:text="Lorem Ipsum"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_tin_no"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_gst_no"
+                    android:layout_below="@+id/edittext_tin_no"
+                    android:text="GST No:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_gst_no"
+                    android:text="Lorem Ipsum"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_gst_no"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_treasury"
+                    android:layout_below="@+id/edittext_gst_no"
+                    android:text="Do you have Haryana Treasury Unique Code:"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_treasury"
+                    android:text="Yes"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_treasury"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_treasury_code"
+                    android:layout_below="@+id/edittext_treasury"
+                    android:text="Treasury Unique Code"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"
+
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edittext_treasury_code"
+                    android:text="Yes"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/text_treasury_code"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+
+
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

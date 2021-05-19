@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    tools:context=".splash">
+
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:padding="10dp"
+          android:gravity="center"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login  "
+         android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textColor="#66CEC0"
+
+         android:textStyle="bold"
+        android:background="@drawable/round_button"
+        android:id="@+id/button_login"
+
+        />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Register"
+              android:textColor="#66CEC0"
+              android:paddingLeft="40dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginLeft="10dp"
+              android:paddingRight="40dp"
+              android:id="@+id/button_register"
+              android:textStyle="bold"
+              android:background="@drawable/round_button"
+              />
+      </LinearLayout>
+
+  </RelativeLayout>

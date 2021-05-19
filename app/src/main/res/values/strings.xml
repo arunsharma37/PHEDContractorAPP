@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">PHED Contractor</string>
+    <string name="Register_Now"><u>Register Now</u></string>
+
+    <string name="selected_item">Selected item:</string>
+    <string name="back_string">Press again to exit</string>
+
+    <string name="write_storage">Press again to exit</string>
+    <string name="permission_request">Press again to exit</string>
+
+    <string name="alert_tittle">Permission needed</string>
+
+    <string name="alert_message">This permission is needed for select the file from your mobile</string>
+
+    <string name="permmission_granted">Permission Granted</string>
+    <string name="permmission_denied">Permission Denied</string>
+
+    <string-array name="constitutions">
+        <item>Select Constitutions Type</item>
+        <item>Individual</item>
+        <item>Partnership</item>
+        <item>Public Limited</item>
+        <item>L and C Society</item>
+        <item>Pvt. Ltd.</item>
+        <item>Joint Venture</item>
+        <item>Sole Proprietor</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Select State</item>
+        <item>"Andaman &amp; Nicobar Islands"</item>
+        <item>ANDHRA PRADESH</item>
+        <item>ARUNACHAL PRADESH</item>
+        <item>ASSAM</item>
+        <item>BIHAR</item>
+        <item>Chandigarh</item>
+        <item>CHHATTISGARH</item>
+        <item>Delhi</item>
+        <item>GOA</item>
+        <item>GUJARAT</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>JAMMU &amp; KASHMIR</item>
+        <item>JHARKHAND</item>
+        <item>KARNATAKA</item>
+        <item>KERLA</item>
+        <item>LADAKH</item>
+        <item>LAKSHADWEEP</item>
+        <item>MADHYA PRADESH</item>
+        <item>MAHARASHTRA</item>
+        <item>MANIPUR</item>
+        <item>MEGHALAYA</item>
+        <item>MIZORAM</item>
+        <item>NAGALAND</item>
+        <item>ODISHA</item>
+        <item>PUDUCHERRY</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU</item>
+        <item>Tripura</item>
+        <item>Uttar Pradesh</item>
+        <item>Uttarakhand</item>
+        <item>WEST BENGAL</item>
+    </string-array>
+
+
+    <string-array name="Districts">
+        <item>Select District</item>
+        <item>Ambala</item>
+        <item>Bhiwani</item>
+        <item>Charkhi Dadri</item>
+        <item>Faridabad</item>
+        <item>Fatehabad</item>
+        <item>Gurugram</item>
+        <item>Hisar</item>
+        <item>Jhajjar</item>
+        <item>Jind</item>
+        <item>Kaithal</item>
+        <item>Karnal</item>
+        <item>Kurukshetra</item>
+        <item>Mahendragarh</item>
+        <item>Nuh</item>
+        <item>Palwal</item>
+        <item>Panchkula</item>
+        <item>Panipat</item>
+        <item>Rewari</item>
+        <item>Rohtak</item>
+        <item>Sirsa</item>
+        <item>Sonipat</item>
+        <item>Yamuna Nagar</item>
+
+    </string-array>
+</resources>

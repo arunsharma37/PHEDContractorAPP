@@ -1,0 +1,615 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".splash">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ToolbarTheme">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_img"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic__back_arrow"/>
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Lodge Grievance"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_below="@+id/toolbar"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/text_welcome"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Complaint"
+        android:layout_below="@+id/text_welcome"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/text_register"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_below="@+id/text_register">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout_parent"
+            android:layout_below="@id/text_register"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/ly_tender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="8"
+                android:orientation="horizontal"
+                android:id="@+id/dept_dropDown"
+                android:background="@drawable/spinner_design"
+                tools:ignore="UselessParent">
+
+                <Spinner
+                    android:id="@+id/spnGift"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-5dp"
+                android:background="#fff"
+                android:paddingLeft="2dp"
+                android:paddingRight="3dp"
+                android:text="Department"
+                android:textStyle="bold"
+                android:id="@+id/text_dept"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="8"
+                android:layout_below="@+id/dept_dropDown"
+                android:orientation="horizontal"
+                android:id="@+id/layout_tender"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/edt_tender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:padding="10dp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:background="@drawable/spinner_design"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-5dp"
+                android:background="#fff"
+                android:paddingLeft="2dp"
+                android:paddingRight="3dp"
+                android:textStyle="bold"
+                android:text="Tender No"
+                android:layout_below="@+id/dept_dropDown"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:gravity="center"
+                android:text="OR"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/layout_tender"
+                android:id="@+id/text_or"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="8"
+                android:layout_below="@+id/text_or"
+                android:orientation="horizontal"
+                android:id="@+id/layout_work"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/edt_workid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overlapAnchor="false"
+                    android:padding="10dp"
+                    android:inputType="number"
+                     android:maxLength="10"
+                    android:background="@drawable/spinner_design"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-5dp"
+                android:background="#fff"
+                android:paddingLeft="2dp"
+                android:paddingRight="3dp"
+                android:textStyle="bold"
+                android:text="Work ID"
+                android:layout_below="@+id/text_or"
+                android:textColor="#000" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_work"
+                android:layout_marginTop="10dp"
+                android:text="Submit"
+                android:textSize="15dp"
+                android:id="@+id/button_submit"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+
+                android:background="@drawable/round_button_colored"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/layout_tender_details"
+                android:layout_below="@+id/ly_tender"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/text_text_details"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_width="150dp"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        android:layout_marginTop="20dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="3dp"
+                        android:gravity="center"
+                        android:text="Tender Details"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="2dp"
+                        android:background="#000"
+                        android:layout_marginTop="20dp"
+                        />
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_tender_details"
+                    android:layout_margin="20dp"
+
+                    android:layout_below="@+id/text_text_details">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#DCDCDC"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="Department: "
+
+                                android:id="@+id/text_work_no"
+                                android:textSize="15dp"
+
+                                android:textStyle="bold"
+                                />
+
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="PHED"
+                                android:id="@+id/work_no"
+                                android:layout_toRightOf="@+id/text_work_no"
+                                android:textSize="15dp"
+
+                                />
+
+
+
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="Work ID : "
+
+                                android:id="@+id/text_work_name"
+                                android:textSize="15dp"
+
+                                android:textStyle="bold"
+                                />
+
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="98623"
+                                android:id="@+id/work_nname"
+                                android:layout_toRightOf="@+id/text_work_name"
+                                android:textSize="15dp"
+
+                                />
+
+
+
+
+
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/text_agreement_no"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tender ID : "
+
+                                android:textColor="#000"
+                                android:textSize="15dp"
+
+                                android:textStyle="bold" />
+
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="ECX001"
+                                android:id="@+id/agrement_no"
+                                android:layout_toRightOf="@+id/text_agreement_no"                                android:textSize="15dp"
+
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="Name Of Work : "
+
+                                android:id="@+id/text_emd_amt"
+                                android:textSize="15dp"
+
+                                android:textStyle="bold"
+                                />
+
+
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:text="Road Repair"
+                                android:id="@+id/end_amount"
+                                android:layout_toRightOf="@+id/text_emd_amt"                                android:textSize="15dp"
+
+                                />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="8"
+                    android:padding="10dp"
+                    android:layout_below="@+id/card_tender_details"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_category_drop"
+                    android:background="@drawable/spinner_design"
+                    tools:ignore="UselessParent">
+
+                    <Spinner
+                        android:id="@+id/category_drop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false"
+
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="#fff"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:layout_below="@+id/card_tender_details"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    android:id="@+id/text_category"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="8"
+                    android:padding="10dp"
+                    android:layout_below="@+id/layout_category_drop"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_subcategory_drop"
+                    android:background="@drawable/spinner_design"
+                    tools:ignore="UselessParent">
+
+                    <Spinner
+                        android:id="@+id/sub_category_drop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:overlapAnchor="false"
+
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:layout_below="@+id/layout_category_drop"
+                    android:text="Subcategory"
+                    android:textStyle="bold"
+                    android:id="@+id/text_sub_category"
+                    android:textColor="#000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="8"
+                    android:layout_below="@+id/layout_subcategory_drop"
+                    android:orientation="horizontal"
+                    android:id="@+id/layout_remarks"
+                    tools:ignore="UselessParent">
+
+                    <EditText
+                        android:id="@+id/edt_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/spinner_design"
+                        android:inputType="textMultiLine"
+                        android:overlapAnchor="false"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:maxLines="4"
+                        android:scrollbars="vertical"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="3dp"
+                    android:textStyle="bold"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:text="Grievance Remarks"
+                    android:layout_below="@+id/layout_subcategory_drop"
+                    android:textColor="#000"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_remarks"
+                     android:layout_marginLeft="20dp"
+                    android:text="Attach File"
+                    android:textSize="15dp"
+                    android:id="@+id/btn_attach"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/sqaure_editbox"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:layout_toRightOf="@+id/btn_attach"
+                    android:layout_below="@+id/layout_remarks"
+                    android:id="@+id/layout_img_uri">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_img"
+                        android:layout_below="@+id/image_uri"
+
+
+                        android:drawableLeft="@drawable/image"
+                        android:maxLength="6"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="#000"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_img_uri"
+                    android:layout_marginTop="10dp"
+                    android:text="Submit"
+                    android:textSize="15dp"
+                    android:id="@+id/button_submit_comp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/round_button_colored"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

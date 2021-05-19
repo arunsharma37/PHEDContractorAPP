@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:background="@drawable/two_color"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img_logo"
+        android:background="@mipmap/hry_gov2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/img_logo"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="HARYANA CONTRACTOR \nGRIEVANCES REDRESSAL SYSTEM"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/text_register">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:layout_gravity="center"
+    android:paddingRight="10dp"
+
+    android:paddingTop="10dp"
+
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    tools:context=".login"
+    android:id="@+id/main_parent"
+    android:fitsSystemWindows="true">
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:id="@+id/card"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="14dp"
+              >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="WELCOME"
+                android:id="@+id/hello"
+
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/signin_text"
+                android:layout_below="@+id/hello"
+                android:text="Sign into your account"
+                android:textColor="#000"
+                android:textSize="15dp"
+                  />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signin_text"
+                android:layout_alignParentLeft="true"
+                android:text="Contractor ID"
+                android:id="@+id/contractor_id"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp" />
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:id="@+id/input_contractor_id"
+                android:drawableRight="@drawable/ic_contractor"
+                android:layout_below="@+id/contractor_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_contractor_id"
+                android:layout_alignParentLeft="true"
+                android:text="OTP"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:id="@+id/text_otp"
+
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:maxLength="4"
+                android:inputType="number"
+                android:id="@+id/input_otp"
+                android:drawableRight="@drawable/ic_otp"
+
+                android:layout_below="@+id/text_otp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_otp"
+                android:layout_marginTop="20dp"
+                android:text="Send OTP"
+                android:textSize="15dp"
+                android:id="@+id/button_login"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:background="@drawable/round_button_colored"
+                android:layout_centerInParent="true"/>
+
+            <requestFocus />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
