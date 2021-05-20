@@ -2,12 +2,11 @@ package com.example.phedcontractor
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.os.CountDownTimer
 import android.view.View
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import com.example.phedcontractorapp.databinding.ActivityLoginBinding
 
 
@@ -56,6 +55,7 @@ class login: AppCompatActivity() {
                     binding1!!.textOtp.visibility = View.VISIBLE
                     binding1!!.inputOtp.visibility = View.VISIBLE
                     binding1!!.buttonLogin.text = "Login"
+                    binding1!!.textResendOtp.visibility=View.VISIBLE
                 } else {
 
                     Toast.makeText(
@@ -69,6 +69,22 @@ class login: AppCompatActivity() {
 
             }
 
+        }
+
+        binding1!!.textResendOtp.setOnClickListener {
+
+            object : CountDownTimer(30000, 1000) {
+                override fun onTick(millisUntilFinished: Long) {
+
+
+                    binding1!!.textResendOtp.text="Seconds Remaining: "+ millisUntilFinished / 1000
+                    //here you can have your logic to set text to edittext
+                }
+
+                override fun onFinish() {
+                    binding1!!.textResendOtp.text="Resend OTP"
+                }
+            }.start()
         }
 
 
